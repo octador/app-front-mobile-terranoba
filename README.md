@@ -97,21 +97,24 @@ npx expo start
 ``` 
 ### 5. Structure du Projet
 
-```bash
+```bash └── RootNavigator.tsx
 app-front-mobile-terranoba/
 ├── assets/              # Images et icônes
 │   ├── adaptive-icon.png
 │   ├── favicon.png
 │   └── splash.png
 ├── src/
+│   ├── assets/          # Images et icônes
+│   │   ├── icons.png        # Images et icônes
+│   │   └── images.png
 │   ├── components/      # Composants réutilisables
 │   ├── navigation/      # Configuration de la navigation
 │   │   ├── index.tsx
-│   │   └── RootNavigator.tsx
-│   ├── screens/         # Écrans de l'application
-│   │   ├── DashboardScreen.tsx
-│   │   ├── WateringScreen.tsx
-│   │   └── ProfileScreen.tsx
+│   │   ├── screens/         # Écrans de l'application
+│   │       ├── DashboardScreen.tsx
+│   │       ├── WateringScreen.tsx
+│   │       └── ProfileScreen.tsx
+│   │
 │   ├── theme/           # Thème global
 │   │   ├── colors.ts
 │   │   └── index.ts
@@ -121,7 +124,6 @@ app-front-mobile-terranoba/
 ├── package.json
 └── tsconfig.json
 ```
-
 ## 🧭 Navigation
 
 La navigation est configurée avec **React Navigation** et inclut :
