@@ -97,6 +97,7 @@ npx expo start
 ``` 
 ### 5. Structure du Projet
 
+```bash
 app-front-mobile-terranoba/
 ├── assets/              # Images et icônes
 │   ├── adaptive-icon.png
@@ -119,6 +120,7 @@ app-front-mobile-terranoba/
 ├── app.json             # Configuration Expo
 ├── package.json
 └── tsconfig.json
+```
 
 ## 🧭 Navigation
 
