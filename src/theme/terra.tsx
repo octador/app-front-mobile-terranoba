@@ -6,12 +6,14 @@ export const TerraTheme: Theme = {
   colors: {
     ...DefaultTheme.colors,
 
+
+
     background: '#ffffff',   // fond global
     card: '#ffffff',         // headers / tabs
     border: '#e5e5e5',
 
     primary: '#2E7D32',      // vert Terra
-    text: '#111111',
+    text: '#021c08',
     notification: '#2E7D32',
   },
 };
