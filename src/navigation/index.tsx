@@ -18,6 +18,15 @@ import Garden from './screens/Garden';
 import Watering from './screens/Watering';
 
 const HomeTabs = createBottomTabNavigator({
+   screenOptions: {
+    sceneContainerStyle: {
+      backgroundColor: '#ffffff',
+    },
+    tabBarStyle: {
+      backgroundColor: '#ffffff',
+      borderTopColor: '#e5e5e5', // optionnel
+    },
+  },
   screens: {
     Dashboard: {
       screen: Dashboard,
@@ -102,6 +111,11 @@ const HomeTabs = createBottomTabNavigator({
 });
 
 const RootStack = createNativeStackNavigator({
+  screenOptions: {
+    contentStyle: {
+      backgroundColor: '#ffffff',
+    },
+  },
   screens: {
     HomeTabs: {
       screen: HomeTabs,

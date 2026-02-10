@@ -32,11 +32,11 @@ export default function Header({
 
 const styles = StyleSheet.create({
   container: {
-    margin: 16,
+    margin: 15,
     borderWidth: 1,
     borderColor: colors.border,
     borderRadius: 5,
-    padding: 16,
+    padding: 15,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',

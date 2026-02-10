@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     width: '100%',
     marginBottom: 10,
     borderRadius: 8,
-    overflow: 'hidden',
+    // overflow: 'hidden',
     backgroundColor: colors.background,
   },
   header: {

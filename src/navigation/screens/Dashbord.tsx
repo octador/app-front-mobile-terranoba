@@ -3,12 +3,14 @@ import { View, StyleSheet } from 'react-native';
 import  Header  from '../../components/Header';
 import  DashboardCard  from '../../components/DashbordCard';
 import  FixedSection  from '../../components/FixedSection';
+import { ScrollView } from 'react-native';
 
 export default function Dashboard() {
   return (
     <View style={styles.container}>
-      {/* <Header city="Paris" tempMin={10} tempMax={20} tempCurrent={16} />
-      <FixedSection title="Tableu de bord">
+      <ScrollView>
+      <Header city="Paris" tempMin={10} tempMax={20} tempCurrent={16} />
+      <FixedSection title="Tableau de bord">
         <View style={styles.columnsContainer}>
           <View style={styles.column}>
             <DashboardCard title="Jardin" image={require('../../assets/jardin1.jpg')} />
@@ -26,13 +28,31 @@ export default function Dashboard() {
             <DashboardCard title="Planning" image={require('../../assets/legumes.jpg')} />
           </View>
         </View>
-      </FixedSection> */}
+        <View style={styles.columnsContainer}>
+          <View style={styles.column}>
+            <DashboardCard title="Test de sol" image={require('../../assets/test_sol.jpg')} />
+          </View>
+          <View style={styles.column}>
+            <DashboardCard title="Planning" image={require('../../assets/legumes.jpg')} />
+          </View>
+        </View>
+        <View style={styles.columnsContainer}>
+          <View style={styles.column}>
+            <DashboardCard title="Test de sol" image={require('../../assets/test_sol.jpg')} />
+          </View>
+          <View style={styles.column}>
+            <DashboardCard title="Planning" image={require('../../assets/legumes.jpg')} />
+          </View>
+        </View>
+      </FixedSection>
+      </ScrollView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     // padding: 0,
     gap: 20,
   },
