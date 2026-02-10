@@ -16,6 +16,10 @@ import  NotFound  from './screens/NotFound';
 import Dashboard from './screens/Dashbord';
 import Garden from './screens/Garden';
 import Watering from './screens/Watering';
+import SoilTest from './screens/SoilTest';
+import Planning from './screens/Planning';
+import Tutorial from './screens/Tutorial';
+import Plants from './screens/Plants';
 
 const HomeTabs = createBottomTabNavigator({
    screenOptions: {
@@ -35,6 +39,38 @@ const HomeTabs = createBottomTabNavigator({
         tabBarIcon: ({ color, size }) => (
           <Image
             source={newspaper} // remplace par ton icône Dashboard si tu veux
+            tintColor={color}
+            style={{
+              width: size,
+              height: size,
+            }}
+          />
+        ),
+      },
+    },
+    SoilTest: {    
+      screen: SoilTest,
+      options: {
+        title: 'Test de sol',
+        tabBarIcon: ({ color, size }) => (
+          <Image
+            source={newspaper} // remplace par ton icône SoilTest si tu veux
+            tintColor={color}
+            style={{
+              width: size,
+              height: size,
+            }}
+          />
+        ),
+      },
+    },
+    Planning: {
+      screen: Planning,
+      options: {
+        title: 'Planning',
+        tabBarIcon: ({ color, size }) => (
+          <Image
+            source={newspaper} // remplace par ton icône Planning si tu veux
             tintColor={color}
             style={{
               width: size,
@@ -67,6 +103,38 @@ const HomeTabs = createBottomTabNavigator({
         tabBarIcon: ({ color, size }) => (
           <Image
             source={newspaper} // remplace par ton icône Watering si tu veux
+            tintColor={color}
+            style={{
+              width: size,
+              height: size,
+            }}
+          />
+        ),
+      },
+    },
+    Tutorial: {
+      screen: Tutorial,
+      options: {
+        title: 'Tutoriel',
+        tabBarIcon: ({ color, size }) => (
+          <Image
+            source={newspaper} // remplace par ton icône Tutorial si tu veux
+            tintColor={color}
+            style={{
+              width: size,
+              height: size,
+            }}
+          />
+        ),
+      },
+    },
+    Plants: {
+      screen: Plants,
+      options: {
+        title: 'Plantes',
+        tabBarIcon: ({ color, size }) => (
+          <Image
+            source={newspaper} // remplace par ton icône Plants si tu veux
             tintColor={color}
             style={{
               width: size,
